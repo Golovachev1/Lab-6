@@ -1,0 +1,21 @@
+<html>
+<head>
+        <title>Площадь треугольника</title>
+    </head>
+    <body>
+        <script>
+        function triangle(a, h) {
+            if (a < 1) {
+                return 'Длина треугольника должна быть положительной!'
+            } else if (h < 1) {
+                return 'Высота треугольника должна быть положительной!'
+            } else {
+            return 0.5 * a * h;
+        }
+        }
+        let side = Number(prompt('Введите длину треугольника'));
+        let height = Number(prompt('Введите высоту треугольника'));
+        document.write(triangle(side, height));
+        </script>
+    </body>
+</html>
